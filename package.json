@@ -1,29 +1,25 @@
 {
-  "name": "nos-payload",
+  "name": "nos-sanity",
   "version": "0.1.0",
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "payload": "payload",
-    "generate:types": "payload generate:types"
+    "dev": "sanity dev",
+    "start": "sanity start",
+    "build": "sanity build",
+    "deploy": "sanity deploy",
+    "typegen": "sanity schema extract && sanity typegen generate"
   },
   "dependencies": {
-    "@payloadcms/db-postgres": "latest",
-    "@payloadcms/next": "latest",
-    "@payloadcms/richtext-lexical": "latest",
-    "next": "latest",
-    "payload": "latest",
-    "react": "latest",
-    "react-dom": "latest",
-    "sharp": "latest"
+    "@sanity/vision": "latest",
+    "sanity": "latest",
+    "styled-components": "latest"
   },
   "devDependencies": {
+    "@sanity/eslint-config-studio": "latest",
     "@types/node": "latest",
-    "@types/react": "latest",
-    "@types/react-dom": "latest",
+    "eslint": "latest",
+    "prettier": "latest",
     "typescript": "latest"
   }
 }
